@@ -1,0 +1,18 @@
+-solver gmres
+-gmres_restart 200
+-gmres_pc_type solver
+-gmres_pc_opts {
+    -solver asm
+    -asm_restriction global        # local, global
+    -asm_prolongation local        # local, global
+    -asm_overlap 1
+    -verbosity 0                         # verbosity for the ASM solver
+    -asm_sub_solver_opts {
+        -solver mumps                    # any solver (recomm. MUMPS or PARDISO)
+        -mumps_symmetry unsym      # spd, sym, unsym
+        -mumps_precision double    # double, single
+	-mumps_fillin 400                  
+        -verbosity 0               # verbosity for MUMPS
+    }
+}
+
