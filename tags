@@ -1,0 +1,489 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+A	PNP_coefficient.c	/^FLOAT A = 0.27;  \/\/ for variable dielectic$/;"	v
+ANALYTIC_C	PNP_analytic.c	2;"	d	file:
+ANALYTIC_C	PNP_analytic涂斌.c	2;"	d	file:
+Alpha	PNP_coefficient.c	/^FLOAT Alpha = 0.950;$/;"	v
+Benchmark_Build_Solver	PNP_build_solver.c	/^static void Benchmark_Build_Solver(SOLVER* solver, DOF *u, DOF *size_p, DOF **p, DOF *grad_G, DOF *grad_H) {$/;"	f	file:
+Benchmark_Build_p_Solver	PNP_build_solver.c	/^static void Benchmark_Build_p_Solver(SOLVER *solver, DOF *u, DOF *size_p, DOF **p, DOF *D) {$/;"	f	file:
+Ber	PNP_more.c	/^FLOAT Ber(FLOAT x) {$/;"	f
+Beta	PNP_coefficient.c	/^FLOAT ec, Beta, Kappa_2, kB, kcal, Is, p_bulk;$/;"	v
+Build_H_Solver	PNP_build_solver.c	/^static void Build_H_Solver(SOLVER *solver, DOF *H) {$/;"	f	file:
+Build_Primitive_Solver	PNP_build_solver.c	/^static void Build_Primitive_Solver(SOLVER* solver, DOF *u, DOF *size_p, DOF **p, DOF *grad_G, DOF *grad_H) {$/;"	f	file:
+Build_Primitive_Solver_u_D	PNP_build_solver.c	/^static void Build_Primitive_Solver_u_D(SOLVER* solver, DOF *u, DOF *size_p, DOF **p, DOF *grad_G, DOF *grad_H) {$/;"	f	file:
+Build_p_Solver	PNP_build_solver.c	/^static void Build_p_Solver(SOLVER *solver, DOF *u, DOF *size_p, DOF **p, DOF *D) {$/;"	f	file:
+Build_p_Solver_born	PNP_build_solver.c	/^static void Build_p_Solver_born(SOLVER *solver, DOF *u, DOF *size_p, DOF **p, DOF *D, DOF *Epsilon) {$/;"	f	file:
+Build_p_Solver_u_D	PNP_build_solver.c	/^static void Build_p_Solver_u_D(SOLVER *solver, DOF *u, DOF *u_D, DOF *size_p, DOF **p, DOF *D) {$/;"	f	file:
+CGSE	PNP_coefficient.c	15;"	d	file:
+CGSE_unit	PNP_coefficient.c	/^FLOAT CGSE_unit = 1e8;\/* 1cm = 1e8A *\/$/;"	v
+Calculate_chemical_potential	PNP_more.c	/^static void Calculate_chemical_potential(DOF **tmp, DOF *u, DOF **p, DOF *Epsilon, int j) {$/;"	f	file:
+Calculate_dof_circle_value	PNP_more.c	/^FLOAT Calculate_dof_circle_value(int region, DOF *dof, FLOAT r, FLOAT value) {$/;"	f
+Calculate_dof_positive_value	PNP_more.c	/^FLOAT Calculate_dof_positive_value(int region, int d, DOF *dof, FLOAT value) {$/;"	f
+Calculate_dof_value	PNP_more.c	/^FLOAT Calculate_dof_value(int region, int d, DOF *dof, FLOAT value) {$/;"	f
+Calculate_energy	PNP_more.c	/^static void Calculate_energy(DOF *u, DOF *H) {$/;"	f	file:
+Calculate_potential_energy	PNP_more.c	/^static void Calculate_potential_energy(DOF **tmp, DOF *u, DOF *Epsilon, int j) {$/;"	f	file:
+Cosx	PNP_analytic.c	22;"	d	file:
+Cosx	PNP_analytic涂斌.c	15;"	d	file:
+Cosy	PNP_analytic.c	23;"	d	file:
+Cosy	PNP_analytic涂斌.c	16;"	d	file:
+Cosz	PNP_analytic.c	24;"	d	file:
+Cosz	PNP_analytic涂斌.c	17;"	d	file:
+D	PNP_coefficient.c	/^	FLOAT D;\/\/A^2\/ps$/;"	m	struct:ions_	file:
+EAFE	PNP_coefficient.c	39;"	d	file:
+Epsilon_c	PNP_coefficient.c	/^FLOAT Epsilon_c = 78.0; \/* relative permittivity in channel*\/$/;"	v
+Epsilon_m	PNP_coefficient.c	/^const FLOAT Epsilon_m = 2.0; \/* relative permittivity in \\Omega_m *\/$/;"	v
+Epsilon_s	PNP_coefficient.c	/^const FLOAT Epsilon_s = 78.0; \/* relative permittivity in \\Omega_s *\/$/;"	v
+Epsilon_type	PNP_coefficient.c	/^INT Epsilon_type = 1;$/;"	v
+Epsilon_vacuum	PNP_coefficient.c	/^FLOAT Epsilon_vacuum = 0.0; \/* vacuum permittivity *\/$/;"	v
+Estimate_N_P_error	PNP_more.c	/^static void Estimate_N_P_error(INT TD, DOF *u, DOF *TMP_u, DOF **p, DOF **TMP_p, DOF **indicator, DOF **error) {$/;"	f	file:
+Estimate_Poisson_error	PNP_more.c	/^static void Estimate_Poisson_error(DOF *u, DOF **p, DOF **indicator, DOF **error) {$/;"	f	file:
+Example	PNP_coefficient.c	/^INT Example = -1;$/;"	v
+G	PNP.h	/^DOF *G, *H, *grad_G, *grad_H;   \/\/initially calculated$/;"	v
+H	PNP.h	/^DOF *G, *H, *grad_G, *grad_H;   \/\/initially calculated$/;"	v
+Init_coefficient	PNP_coefficient.c	/^static void Init_coefficient() {$/;"	f	file:
+Is	PNP_coefficient.c	/^FLOAT ec, Beta, Kappa_2, kB, kcal, Is, p_bulk;$/;"	v
+Iteration_Main_Part	Solve_Nonlinear_Poisson_Equation.c	/^void Iteration_Main_Part() {$/;"	f
+Iteration_Poisson_Equation	Solve_Nonlinear_Poisson_Equation.c	/^ void Iteration_Poisson_Equation() {$/;"	f
+K1	PNP_coefficient.c	/^FLOAT K1, K2; \/\/rgshen  $/;"	v
+K2	PNP_coefficient.c	/^FLOAT K1, K2; \/\/rgshen  $/;"	v
+K_i	PNP_coefficient.c	/^FLOAT K_i[MNION] = {0.0};$/;"	v
+Kappa_2	PNP_coefficient.c	/^FLOAT ec, Beta, Kappa_2, kB, kcal, Is, p_bulk;$/;"	v
+Ken	PNP_coefficient.c	/^FLOAT Ken = 10;$/;"	v
+Lambda	PNP_coefficient.c	/^FLOAT Lambda = 1;$/;"	v
+Lmesh_unit	PNP_analytic.c	/^FLOAT Lmesh_unit = 100.0;        \/\/--> L = 100  网格计算区域$/;"	v
+Logarithm1	PNP_coefficient.c	28;"	d	file:
+Logarithm2	PNP_coefficient.c	29;"	d	file:
+MNATOMS	PNP_coefficient.c	/^const int MNATOMS = 200000; \/* The upper bound of atoms numbers *\/$/;"	v
+MNBCMAP	PNP_coefficient.c	/^const int MNBCMAP = 10;\/* The upper bound of bc_mark numbers*\/$/;"	v
+MNION	PNP_coefficient.c	60;"	d	file:
+MNION1	PNP.h	77;"	d
+MOD	PNP_coefficient.c	/^INT MOD = 0; \/\/rgshen$/;"	v
+Method	PNP_coefficient.c	/^INT Method = Primitive;$/;"	v
+Mu	PNP_coefficient.c	/^FLOAT Mu = 0.1; \/\/ for born term$/;"	v
+NA	PNP_coefficient.c	/^const FLOAT NA = 6.022e+23; \/* Avogadro constant *\/$/;"	v
+NATOMS	PNP_coefficient.c	/^int NATOMS = 0;$/;"	v
+NBCMAP	PNP_coefficient.c	/^int NBCMAP = 0;$/;"	v
+NION	PNP_coefficient.c	/^int NION = 3;$/;"	v
+NPRO	PNP_coefficient.c	/^int NPRO = 0;\/\/number of product species --rgshen <--xujj$/;"	v
+NUM	PNP_coefficient.c	/^FLOAT NUM = 70;$/;"	v
+PNP_FUNC_1	PNP_func.h	/^typedef void PNP_FUNC_1(FLOAT *);$/;"	t
+PNP_FUNC_2	PNP_func.h	/^typedef void PNP_FUNC_2(FLOAT *, FLOAT *);$/;"	t
+PNP_FUNC_H	PNP_func.h	2;"	d
+PNP_H	PNP.h	6;"	d
+PNP_NP	PNP_NEWTON.h	/^static void PNP_NP(SOLVER *solver, DOF *tcn, DOF *u, DOF **c){$/;"	f
+PNP_P	PNP_NEWTON.h	/^static void PNP_P(SOLVER* solver, DOF *u, DOF **tc, DOF **c, DOF *Grad_G, DOF *Grad_H){$/;"	f
+PNP_Quad_1_D_Bas	PNP_quad.h	6;"	d
+PNP_Quad_1_D_Bas_Bas	PNP_quad.h	38;"	d
+PNP_Quad_1_D_Bas_G_D_G_B	PNP_quad.h	68;"	d
+PNP_Quad_1_D_G_B_G_B	PNP_quad.h	53;"	d
+PNP_Quad_1_D_G_D_G_B	PNP_quad.h	21;"	d
+PNP_Quad_2_D_Bas	PNP_quad.h	9;"	d
+PNP_Quad_2_D_Bas_Bas	PNP_quad.h	41;"	d
+PNP_Quad_2_D_Bas_G_D_G_B	PNP_quad.h	71;"	d
+PNP_Quad_2_D_G_B_G_B	PNP_quad.h	56;"	d
+PNP_Quad_2_D_G_D_G_B	PNP_quad.h	24;"	d
+PNP_Quad_3_D_Bas	PNP_quad.h	12;"	d
+PNP_Quad_3_D_Bas_Bas	PNP_quad.h	44;"	d
+PNP_Quad_3_D_Bas_G_D_G_B	PNP_quad.h	74;"	d
+PNP_Quad_3_D_G_B_G_B	PNP_quad.h	59;"	d
+PNP_Quad_3_D_G_D_G_B	PNP_quad.h	27;"	d
+PNP_Quad_4_D_Bas	PNP_quad.h	15;"	d
+PNP_Quad_4_D_Bas_Bas	PNP_quad.h	47;"	d
+PNP_Quad_4_D_Bas_G_D_G_B	PNP_quad.h	/^FLOAT PNP_Quad_4_D_Bas_G_D_G_B(ELEMENT *e, PNP_FUNC_1 func, DOF *dof1, DOF *dof2, DOF *dof3, DOF *dof4, DOF *u, int m, DOF *gdof, DOF *v, int n, int order) {$/;"	f
+PNP_Quad_4_D_G_B_G_B	PNP_quad.h	62;"	d
+PNP_Quad_4_D_G_D_G_B	PNP_quad.h	30;"	d
+PNP_Quad_5_D_Bas	PNP_quad.h	/^FLOAT PNP_Quad_5_D_Bas(ELEMENT *e, PNP_FUNC_1 func, DOF *dof1, DOF *dof2, DOF *dof3, DOF *dof4, DOF *dof5, DOF *u, int n, int order) {$/;"	f
+PNP_Quad_5_D_Bas_Bas	PNP_quad.h	/^FLOAT PNP_Quad_5_D_Bas_Bas(ELEMENT *e, PNP_FUNC_1 func, DOF *dof1, DOF *dof2, DOF *dof3, DOF *dof4, DOF *dof5, DOF *u, int m, DOF *v, int n, int order) {$/;"	f
+PNP_Quad_5_D_G_B_G_B	PNP_quad.h	/^FLOAT PNP_Quad_5_D_G_B_G_B(ELEMENT *e, PNP_FUNC_1 func, DOF *dof1, DOF *dof2, DOF *dof3, DOF *dof4, DOF *dof5, DOF *u, int m, DOF *v, int n, int order) {$/;"	f
+PNP_Quad_5_D_G_D_G_B	PNP_quad.h	/^FLOAT PNP_Quad_5_D_G_D_G_B(ELEMENT *e, PNP_FUNC_1 func, DOF *dof1, DOF *dof2, DOF *dof3, DOF *dof4, DOF *dof5, DOF *u, DOF *v, int n, int order) {$/;"	f
+PNP_Quad_Face_1_D_Bas	PNP_quad.h	769;"	d
+PNP_Quad_Face_1_D_Bas_Bas	PNP_quad.h	627;"	d
+PNP_Quad_Face_2_D_Bas	PNP_quad.h	772;"	d
+PNP_Quad_Face_2_D_Bas_Bas	PNP_quad.h	630;"	d
+PNP_Quad_Face_3_D_Bas	PNP_quad.h	775;"	d
+PNP_Quad_Face_3_D_Bas_Bas	PNP_quad.h	633;"	d
+PNP_Quad_Face_4_D_Bas	PNP_quad.h	778;"	d
+PNP_Quad_Face_4_D_Bas_Bas	PNP_quad.h	636;"	d
+PNP_Quad_Face_5_D_Bas	PNP_quad.h	/^FLOAT PNP_Quad_Face_5_D_Bas(ELEMENT *e, int face, PNP_FUNC_1 func, DOF *dof1, DOF *dof2, DOF *dof3, DOF *dof4, DOF *dof5, DOF *u, int n, int order) {$/;"	f
+PNP_Quad_Face_5_D_Bas_Bas	PNP_quad.h	/^FLOAT PNP_Quad_Face_5_D_Bas_Bas(ELEMENT *e, int face, PNP_FUNC_1 func, DOF *dof1, DOF *dof2, DOF *dof3, DOF *dof4, DOF *dof5, DOF *u, int n, DOF *v, int m, int order) {$/;"	f
+PNP_grow	PNP_coefficient.c	/^FLOAT PNP_grow = 0;$/;"	v
+PNP_grow_n	PNP_coefficient.c	/^INT PNP_grow_n = 1;$/;"	v
+PNP_quad_channel_section	PNP_more.c	/^FLOAT PNP_quad_channel_section(ELEMENT *e, FLOAT npoint, COORD *points, INT grad_dofs, DOF *dof, ...) {$/;"	f
+PRFB	PNP_coefficient.c	38;"	d	file:
+P_B_Dof_Int	PNP_more.c	/^FLOAT P_B_Dof_Int(int region, DOF *U) {$/;"	f
+P_H1	PNP.h	/^FLOAT u_H1, p_H1, P_H1, T_H1;$/;"	v
+P_L2	PNP.h	/^FLOAT u_L2, p_L2, P_L2, T_L2;$/;"	v
+P_Transform	PNP_more.c	/^static void P_Transform(FLOAT Alpha, DOF *p, DOF *P, DOF *u, DOF *size_p) {$/;"	f	file:
+Poisson_Equation_	Solve_Nonlinear_Poisson_Equation.c	/^105 void Poisson_Equation_(int PRT) {$/;"	f
+Primitive	PNP_coefficient.c	20;"	d	file:
+R	PNP_coefficient.c	/^const FLOAT R = 1.0; \/* inner radius of sphere model*\/$/;"	v
+Read_bcmap	PNP_coefficient.c	/^static void Read_bcmap(const char *fn) {$/;"	f	file:
+Read_cube	PNP_coefficient.c	/^static void Read_cube(const char *fn) {$/;"	f	file:
+Read_ions	PNP_coefficient.c	/^static void Read_ions(const char *fn) {$/;"	f	file:
+Read_parameter	PNP_coefficient.c	/^static void Read_parameter(INT read_parameter) {$/;"	f	file:
+Read_pqr	PNP_coefficient.c	/^static void Read_pqr(const char *fn) {$/;"	f	file:
+Region_Quad_Bas_Dof_G_B	PNP_more.c	/^static void Region_Quad_Bas_Dof_G_B(int region, SIMPLEX *e, DOF *dof, DOF *u, int i, DOF *v, int j, int order, FLOAT *value) {$/;"	f	file:
+Region_Quad_Dof_Bas_Bas	PNP_more.c	/^static void Region_Quad_Dof_Bas_Bas(int region, SIMPLEX *e, DOF *dof, DOF *u, int i, DOF *v, int j, int order, FLOAT *value) {$/;"	f	file:
+Region_Quad_Dof_G_B_G_B	PNP_more.c	/^static void Region_Quad_Dof_G_B_G_B(int region, SIMPLEX *e, DOF *dof, DOF *u, int i, DOF *v, int j, int order, FLOAT *value) {$/;"	f	file:
+Region_Quad_Dof_G_D_Bas_G_B	PNP_more.c	/^static void Region_Quad_Dof_G_D_Bas_G_B(int region, SIMPLEX *e, DOF *dof, DOF *dof_vec, DOF *u, int i, DOF *v, int j, int order, FLOAT *value ) {$/;"	f	file:
+Region_Quad_SUPG_term_Primitive	PNP_more.c	/^static void Region_Quad_SUPG_term_Primitive(int region, SIMPLEX *e, DOF *grad_u, DOF *p, int i, int j, int order, FLOAT *value) {$/;"	f	file:
+Region_Quad_SUPG_term_Slotboom	PNP_more.c	/^static void Region_Quad_SUPG_term_Slotboom(int region, SIMPLEX *e, DOF *grad_u, DOF *u, DOF *size_p, DOF *P, int i, int j, int order, FLOAT *value) {$/;"	f	file:
+SI	PNP_coefficient.c	16;"	d	file:
+SI_unit	PNP_coefficient.c	/^FLOAT SI_unit = 1e10;\/* 1m = 1e10A *\/$/;"	v
+SMPNP_Calculate_current	PNP_more.c	/^static void SMPNP_Calculate_current(int region, int d, DOF *u, DOF *u_D, DOF **p, FLOAT value, DOF **size_c, DOF *Epsilon) {$/;"	f	file:
+SMPNP_NP_Slotboomtransform_averaging_EAFE	PNP_build_solver.c	/^static void SMPNP_NP_Slotboomtransform_averaging_EAFE(SOLVER *solver, DOF *u,  DOF **p, DOF *D) {$/;"	f	file:
+SMPNP_NP_Slover_Primitive	PNP_build_solver.c	/^static void SMPNP_NP_Slover_Primitive(SOLVER *solver, DOF *u, DOF **size_c, DOF **p, DOF *D, DOF *size_p) {$/;"	f	file:
+SMPNP_NP_averaging_EAFE_new20210703	PNP_build_solver.c	/^static void SMPNP_NP_averaging_EAFE_new20210703(SOLVER *solver, DOF *u,  DOF **p, DOF *D) {$/;"	f	file:
+SMPNP_PRIMITIVE_NP	PNP_build_solver.c	/^static void SMPNP_PRIMITIVE_NP(SOLVER *solver, DOF *u, DOF *p, DOF **c, DOF *d){$/;"	f	file:
+SOU	PNP_coefficient.c	/^INT SOU = SI;$/;"	v
+SUPG	PNP_coefficient.c	37;"	d	file:
+See_bdry	PNP_more.c	/^static void See_bdry(DOF **bdry) {$/;"	f	file:
+Sinx	PNP_analytic.c	18;"	d	file:
+Sinx	PNP_analytic涂斌.c	12;"	d	file:
+Siny	PNP_analytic.c	19;"	d	file:
+Siny	PNP_analytic涂斌.c	13;"	d	file:
+Sinz	PNP_analytic.c	20;"	d	file:
+Sinz	PNP_analytic涂斌.c	14;"	d	file:
+Slotboom	PNP_coefficient.c	27;"	d	file:
+Solve_Linear_Poisson_Equation	Solve_Nonlinear_Poisson_Equation.c	71;"	d	file:
+Solve_Nonlinear_Poisson_Equation	Solve_Nonlinear_Poisson_Equation.c	74;"	d	file:
+Solve_Poisson_Equation	Solve_Nonlinear_Poisson_Equation.c	/^ void Solve_Poisson_Equation(int type, int PRT) {$/;"	f
+Stabilize	PNP_coefficient.c	/^INT Stabilize = 0;$/;"	v
+Steady_State	PNP.h	23;"	d
+T	PNP_coefficient.c	/^const FLOAT T = 298; \/* temperature *\/$/;"	v
+TMP_c	PNP.h	/^DOF *c[MNION1],  *tmp_c[MNION1],  *TMP_c[MNION1],  *delta_c[MNION1];$/;"	v
+TMP_u	PNP.h	/^DOF *u,     *tmp_u,     *TMP_u,     *delta_u;$/;"	v
+T_H1	PNP.h	/^FLOAT u_H1, p_H1, P_H1, T_H1;$/;"	v
+T_L2	PNP.h	/^FLOAT u_L2, p_L2, P_L2, T_L2;$/;"	v
+Test_Time	PNP.h	25;"	d
+Theta	PNP_coefficient.c	/^FLOAT Theta = 0.8; \/* theta in element refinement *\/$/;"	v
+Time_Dependent	PNP.h	24;"	d
+Time_type	PNP.h	/^INT Time_type = Steady_State;$/;"	v
+Transform	PNP_NEWTON.h	/^static void Transform(DOF *tcn, DOF *u, DOF **c, DOF **cn){$/;"	f
+Transform_type	PNP_coefficient.c	/^INT Transform_type = Primitive;$/;"	v
+VDPNP_NP_averaging_IEAFE	PNP_build_solver.c	/^static void VDPNP_NP_averaging_IEAFE(SOLVER *solver, DOF *u,  DOF **p, DOF *D) {$/;"	f	file:
+VD_Build_Poisson_Solver	PNP_build_solver.c	/^static void VD_Build_Poisson_Solver(SOLVER* solver, DOF *u, DOF *size_p, DOF **p, DOF *grad_G, DOF *grad_H, DOF *Epsilon) {$/;"	f	file:
+VD_Build_Primitive_Solver	PNP_build_solver.c	/^static void VD_Build_Primitive_Solver(SOLVER* solver, DOF *u, DOF *size_p, DOF **p, DOF *grad_G, DOF *grad_H, DOF *Epsilon) {$/;"	f	file:
+VD_Build_Primitive_Solver_u_D	PNP_build_solver.c	/^static void VD_Build_Primitive_Solver_u_D(SOLVER* solver, DOF *u, DOF *size_p, DOF **p, DOF *grad_G, DOF *grad_H, DOF *Epsilon) {$/;"	f	file:
+VD_Calculate_current_u_D_born	PNP_more.c	/^static void VD_Calculate_current_u_D_born(int region, int d, DOF *u, DOF *u_D, DOF **p, FLOAT value, DOF *size_p, DOF *Epsilon) {$/;"	f	file:
+VD_Slotboom_Nonlinear_Poisson_Solver	Solve_Nonlinear_Poisson_Equation.c	/^static void VD_Slotboom_Nonlinear_Poisson_Solver(SOLVER* solver) {$/;"	f	file:
+V_D	PNP_coefficient.c	/^INT V_D = 0;$/;"	v
+V_D_type	PNP_coefficient.c	/^INT V_D_type = 0;$/;"	v
+V_N	PNP_coefficient.c	/^INT V_N = 9;$/;"	v
+V_scd	PNP_coefficient.c	/^INT V_scd = 0;$/;"	v
+Z	PNP_coefficient.c	/^	FLOAT Z;$/;"	m	struct:atoms_	file:
+Z	PNP_coefficient.c	/^	FLOAT Z;\/\/N$/;"	m	struct:ions_	file:
+__PNP_NEWTON_H__	PNP_NEWTON.h	2;"	d
+a	PNP_coefficient.c	/^	FLOAT a;\/\/A$/;"	m	struct:ions_	file:
+a	PNP_coefficient.c	/^FLOAT a[MNION] = {0.0};$/;"	v
+a0	PNP_coefficient.c	/^FLOAT a0 = 3.1; \/* size of H2O *\/$/;"	v
+adaptive_level	PNP_coefficient.c	/^INT adaptive_level = 1, adaptive_refine = -1, prior_refine = 0;$/;"	v
+adaptive_refine	PNP_coefficient.c	/^INT adaptive_level = 1, adaptive_refine = -1, prior_refine = 0;$/;"	v
+all_level	PNP_coefficient.c	/^INT all_level = 0;$/;"	v
+anal_err_n	PNP.h	/^DOF *anal_err_n;$/;"	v
+anal_err_p	PNP.h	/^DOF *anal_err_p;$/;"	v
+anal_err_u	PNP.h	/^DOF *anal_err_u;$/;"	v
+anal_init	PNP.h	34;"	d
+analytic_density	PNP_analytic.c	/^FLOAT analytic_density = 0.05;   \/\/--> c_bulk = 0.05 mol\/L --->=换成国际单位制$/;"	v
+analytic_density	PNP_analytic涂斌.c	/^FLOAT analytic_density = 0.05;$/;"	v
+analytic_f_n	PNP.h	/^DOF *analytic_f_n;$/;"	v
+analytic_f_p	PNP.h	/^DOF *analytic_f_p;$/;"	v
+analytic_finalize	PNP_analytic.c	/^static void analytic_finalize() {$/;"	f	file:
+analytic_finalize	PNP_analytic涂斌.c	/^static void analytic_finalize() {$/;"	f	file:
+analytic_func_f_n	PNP_analytic.c	/^static void analytic_func_f_n(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+analytic_func_f_n	PNP_analytic涂斌.c	/^static void analytic_func_f_n(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+analytic_func_f_p	PNP_analytic.c	/^static void analytic_func_f_p(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+analytic_func_f_p	PNP_analytic涂斌.c	/^static void analytic_func_f_p(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+analytic_func_grad_n	PNP_analytic.c	/^static void analytic_func_grad_n(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+analytic_func_grad_p	PNP_analytic.c	/^static void analytic_func_grad_p(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+analytic_func_grad_p	PNP_analytic涂斌.c	/^static void analytic_func_grad_p(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+analytic_func_grad_u	PNP_analytic.c	/^static void analytic_func_grad_u(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+analytic_func_grad_u	PNP_analytic涂斌.c	/^static void analytic_func_grad_u(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+analytic_func_n	PNP_analytic.c	/^static void analytic_func_n(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+analytic_func_n	PNP_analytic涂斌.c	/^static void analytic_func_n(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+analytic_func_p	PNP_analytic.c	/^static void analytic_func_p(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+analytic_func_p	PNP_analytic涂斌.c	/^static void analytic_func_p(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+analytic_func_u	PNP_analytic.c	/^static void analytic_func_u(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+analytic_func_u	PNP_analytic涂斌.c	/^static void analytic_func_u(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+analytic_grad_n	PNP.h	/^DOF *analytic_grad_n;$/;"	v
+analytic_grad_p	PNP.h	/^DOF *analytic_grad_p;$/;"	v
+analytic_grad_u	PNP.h	/^DOF *analytic_grad_u;$/;"	v
+analytic_init	PNP_analytic.c	/^static void analytic_init() {$/;"	f	file:
+analytic_init	PNP_analytic涂斌.c	/^static void analytic_init() {$/;"	f	file:
+analytic_n	PNP.h	/^DOF *analytic_n;$/;"	v
+analytic_p	PNP.h	/^DOF *analytic_p;$/;"	v
+analytic_potential	PNP_analytic.c	/^FLOAT analytic_potential = 0.1;  \/\/--> Vm = 0.1 V  ---> u_bulk = ec * Beta * Vm$/;"	v
+analytic_potential	PNP_analytic涂斌.c	/^FLOAT analytic_potential = 0.1;$/;"	v
+analytic_print	PNP_analytic.c	/^static void analytic_print() {$/;"	f	file:
+analytic_print	PNP_analytic涂斌.c	/^static void analytic_print() {$/;"	f	file:
+analytic_refresh	PNP_analytic.c	/^static void analytic_refresh() {$/;"	f	file:
+analytic_refresh	PNP_analytic涂斌.c	/^static void analytic_refresh() {$/;"	f	file:
+analytic_test	PNP.h	/^INT analytic_test = 0;$/;"	v
+analytic_time	PNP_analytic.c	/^FLOAT analytic_time = 5.0e5;$/;"	v
+analytic_time	PNP_analytic涂斌.c	/^FLOAT analytic_time = 5.0e5;$/;"	v
+analytic_u	PNP.h	/^DOF *analytic_u;$/;"	v
+asize_ratio	PNP_coefficient.c	/^FLOAT asize_ratio = 6.022140857e-4;   \/\/!SMPNP --Slotboom 变量 无量纲化（转成 "埃米" 尺度 而引入的比例系数）2021-5-28$/;"	v
+atom	PNP_coefficient.c	/^atoms *atom;$/;"	v
+atoms	PNP_coefficient.c	/^}atoms;$/;"	t	typeref:struct:atoms_	file:
+atoms_	PNP_coefficient.c	/^typedef struct atoms_{$/;"	s	file:
+bc_map	PNP_coefficient.c	/^static int bc_map(int bctype) {$/;"	f	file:
+bc_mark	PNP_coefficient.c	/^int bc_mark[10] = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1};$/;"	v
+bc_tab	PNP_coefficient.c	/^int bc_tab[10] = {0};$/;"	v
+bdry	PNP.h	/^DOF *bdry;          \/\/boundary mark$/;"	v
+bdry_quad	PNP_more.c	/^static void bdry_quad(DOF *p, FLOAT *value) {$/;"	f	file:
+biomolecular	PNP_coefficient.c	43;"	d	file:
+biomolecular_size	PNP_coefficient.c	/^FLOAT biomolecular_size = 200;	\/\/atom$/;"	v
+bmlc_bdry	PNP_coefficient.c	/^BTYPE bmlc_bdry = 0;\/\/biomolecule boundary$/;"	v
+born_correct	PNP_coefficient.c	/^INT born_correct = 0;$/;"	v
+born_test	PNP_coefficient.c	/^INT born_test = 0;$/;"	v
+break_flag	PNP.h	/^int break_flag = 0;     \/\/break flag in counting$/;"	v
+buffer_length	PNP_coefficient.c	/^FLOAT buffer_length = 5;$/;"	v
+buffer_length_eps	PNP_coefficient.c	/^FLOAT buffer_length_eps = 5;$/;"	v
+bulk	PNP_coefficient.c	/^FLOAT bulk[MNION] = {0.0};$/;"	v
+bulk_init	PNP.h	30;"	d
+bulk_length	PNP_coefficient.c	/^FLOAT bulk_length = 10;$/;"	v
+bulk_radius	PNP_coefficient.c	/^FLOAT bulk_radius = 100;	\/\/atom$/;"	v
+bulk_ratio	PNP_coefficient.c	/^FLOAT bulk_ratio = 0.0;\/* ratio of density of reaction product to that of reactive ion*\/$/;"	v
+c	PNP.h	/^DOF *c[MNION1],  *tmp_c[MNION1],  *TMP_c[MNION1],  *delta_c[MNION1];$/;"	v
+c	PNP_coefficient.c	/^	FLOAT c;\/\/mol\/L$/;"	m	struct:ions_	file:
+c_bdry	PNP_coefficient.c	/^BTYPE c_bdry = 0;\/\/channel boundary: H = G on c_bdry and Neumann for u$/;"	v
+chan_bulk_ratio	PNP_coefficient.c	/^FLOAT chan_bulk_ratio = 1.0;    \/\/density ratio of outer$/;"	v
+chan_ratio	PNP_coefficient.c	/^FLOAT chan_ratio = 1.0 \/ 18.0;$/;"	v
+change_file_path	PNP_coefficient.c	/^static void change_file_path(char *path, char **file_name) {$/;"	f	file:
+change_mesh_unit	PNP_coefficient.c	/^FLOAT change_mesh_unit;$/;"	v
+change_unit	PNP_coefficient.c	/^FLOAT change_unit;$/;"	v
+channel_bottom	PNP_coefficient.c	/^FLOAT channel_bottom = 15.0; \/\/因为code里默认是负数，所以要输入正值 rgshen	$/;"	v
+channel_top	PNP_coefficient.c	/^FLOAT channel_top = 15.0; 	$/;"	v
+chemical_potential_calculation	PNP_coefficient.c	/^INT chemical_potential_calculation = 0;$/;"	v
+coarse_g	PNP.h	/^GRID *coarse_g;$/;"	v
+count	PNP_coefficient.c	/^int count = 0;\/\/counting the loop times in every method$/;"	v
+current_calculation	PNP_coefficient.c	/^INT current_calculation = 0;$/;"	v
+current_direction	PNP_coefficient.c	/^INT current_direction = z_axis;$/;"	v
+current_name	PNP_coefficient.c	/^char *current_name;$/;"	v
+current_switch	PNP_coefficient.c	/^INT current_switch = 0; \/\/ switch the order of quad function$/;"	v
+delta	PNP_coefficient.c	/^FLOAT delta = 0.05;$/;"	v
+delta_c	PNP.h	/^DOF *c[MNION1],  *tmp_c[MNION1],  *TMP_c[MNION1],  *delta_c[MNION1];$/;"	v
+delta_u	PNP.h	/^DOF *u,     *tmp_u,     *TMP_u,     *delta_u;$/;"	v
+delta_value	PNP_coefficient.c	/^FLOAT delta_value = 1.00;$/;"	v
+delta_z_D	PNP_coefficient.c	/^FLOAT delta_z_D = 1.0;$/;"	v
+delta_z_E	PNP_coefficient.c	/^FLOAT delta_z_E = 1.0;$/;"	v
+diff_ratio	PNP_coefficient.c	/^FLOAT diff_ratio = 1.0;\/* ratio of diffusion of reaction product to that of reactive ion*\/$/;"	v
+diri_bdry	PNP_coefficient.c	/^BTYPE diri_bdry = 0;\/\/all Dirichlet boundary$/;"	v
+dof_circle_value_calculation	PNP_coefficient.c	/^INT dof_circle_value_calculation = 0;$/;"	v
+dof_coef_vec	PNP_more.c	/^static void dof_coef_vec(DOF **tmp, DOF *u, DOF *v) {$/;"	f	file:
+dof_const	PNP_more.c	/^static void dof_const(DOF **tmp, DOF *u, FLOAT k) {$/;"	f	file:
+dof_direction	PNP_more.c	/^static void dof_direction(DOF **tmp, DOF *u, int d) {$/;"	f	file:
+dof_file	PNP_coefficient.c	/^char *dof_file = NULL;$/;"	v
+dof_load	PNP_more.c	/^static void dof_load(char *fn, int *step_n, DOF *dof, ...) {$/;"	f	file:
+dof_multiple	PNP_more.c	/^static void dof_multiple(DOF **tmp, DOF *dof, ...) {$/;"	f	file:
+dof_name	PNP_coefficient.c	/^char *dof_name;$/;"	v
+dof_plus	PNP_more.c	/^static void dof_plus(DOF **tmp, DOF *dof, ...) {$/;"	f	file:
+dof_positive	PNP_more.c	/^static void dof_positive(DOF *p) {$/;"	f	file:
+dof_pow	PNP_more.c	/^static void dof_pow(DOF **tmp, DOF *dof, FLOAT a) {$/;"	f	file:
+dof_restriction	PNP_more.c	/^static void dof_restriction(DOF *p, DOF *P) {$/;"	f	file:
+dof_save	PNP_more.c	/^static void dof_save(char *fn, int *step_n, DOF *dof, ...) {$/;"	f	file:
+dof_section_value_calculation	PNP_coefficient.c	/^INT dof_section_value_calculation = 0;$/;"	v
+ec	PNP_coefficient.c	/^FLOAT ec, Beta, Kappa_2, kB, kcal, Is, p_bulk;$/;"	v
+energy_calculation	PNP_coefficient.c	/^INT energy_calculation = 0;$/;"	v
+epsilon	PNP_NEWTON.h	/^static void epsilon(SIMPLEX * e, FLOAT * eps){$/;"	f
+epsl	PNP.h	/^DOF *epsl;          \/\/permittivity influenced by ion species$/;"	v
+error	PNP.h	/^DOF *indicator, *error, *td_tmp; \/\/for refinement use$/;"	v
+exflag	PNP_coefficient.c	/^int exflag = 0;$/;"	v
+face_calculation	PNP_coefficient.c	/^INT face_calculation = 0;$/;"	v
+face_measure	PNP_more.c	/^static void face_measure(BTYPE BDRY, GRID *g, INT *n, FLOAT *S) {$/;"	f	file:
+fine_g	PNP.h	/^GRID *fine_g;$/;"	v
+fn_bcmap	PNP_coefficient.c	/^char *fn_bcmap = "1bl8_channel.bc_dirichlet";$/;"	v
+fn_current	PNP_coefficient.c	/^char *fn_current = NULL;    \/\/save current$/;"	v
+fn_dof	PNP_coefficient.c	/^char *fn_dof = NULL;        \/\/save SS dof$/;"	v
+fn_dof_type	PNP_coefficient.c	/^INT fn_dof_type = 1;        \/\/0-save dof in binary file$/;"	v
+fn_input_path	PNP_coefficient.c	/^char *fn_input_path = NULL; \/\/used in transformation of input path$/;"	v
+fn_ions	PNP_coefficient.c	/^char *fn_ions = "cylinder_nanopore.ions";$/;"	v
+fn_mesh	PNP_coefficient.c	/^char *fn_mesh = "..\/PNP_mesh\/1bl8_tu.mesh";$/;"	v
+fn_output_path	PNP_coefficient.c	/^char *fn_output_path = NULL;    \/\/used in transformation of output path$/;"	v
+fn_parameter	PNP_coefficient.c	/^char *fn_parameter = NULL;  \/\/control parameter$/;"	v
+fn_pqr	PNP_coefficient.c	/^char *fn_pqr = "..\/PNP_mesh\/1bl8.pqr";  $/;"	v
+fn_td_dof	PNP_coefficient.c	/^char *fn_td_dof = NULL;     \/\/save TD dof$/;"	v
+func_D	PNP_coefficient.c	/^static void func_D(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+func_G	PNP_coefficient.c	/^static void func_G(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+func_cb	PNP_NEWTON.h	/^static void func_cb(FLOAT x, FLOAT y, FLOAT z, FLOAT *value){$/;"	f
+func_exp_1	PNP_func.h	/^PNP_FUNC_1 func_id, func_unit, func_exp_1, func_exp_2, func_exp_3, func_exp_4;$/;"	v
+func_exp_1	PNP_more.c	/^void func_exp_1(FLOAT *value) {$/;"	f
+func_exp_2	PNP_func.h	/^PNP_FUNC_1 func_id, func_unit, func_exp_1, func_exp_2, func_exp_3, func_exp_4;$/;"	v
+func_exp_2	PNP_more.c	/^void func_exp_2(FLOAT *value) {$/;"	f
+func_exp_3	PNP_func.h	/^PNP_FUNC_1 func_id, func_unit, func_exp_1, func_exp_2, func_exp_3, func_exp_4;$/;"	v
+func_exp_3	PNP_more.c	/^void func_exp_3(FLOAT *value) {$/;"	f
+func_exp_4	PNP_func.h	/^PNP_FUNC_1 func_id, func_unit, func_exp_1, func_exp_2, func_exp_3, func_exp_4;$/;"	v
+func_exp_4	PNP_more.c	/^void func_exp_4(FLOAT *value) {$/;"	f
+func_grad_G	PNP_coefficient.c	/^static void func_grad_G(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+func_id	PNP_func.h	/^PNP_FUNC_1 func_id, func_unit, func_exp_1, func_exp_2, func_exp_3, func_exp_4;$/;"	v
+func_id	PNP_more.c	/^void func_id(FLOAT *value) {$/;"	f
+func_init	PNP.h	31;"	d
+func_p_k	PNP_func.h	/^PNP_FUNC_2 func_p_k;$/;"	v
+func_p_k	PNP_more.c	/^void func_p_k(FLOAT *p, FLOAT *value) {$/;"	f
+func_pb	PNP_coefficient.c	/^static void func_pb(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+func_scd	PNP_coefficient.c	/^static void func_scd(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+func_u	PNP_NEWTON.h	/^static void func_u(FLOAT x, FLOAT y, FLOAT z, FLOAT *value){$/;"	f
+func_ub	PNP_coefficient.c	/^static void func_ub(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+func_ub1	PNP_coefficient.c	/^static void func_ub1(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+func_unit	PNP_func.h	/^PNP_FUNC_1 func_id, func_unit, func_exp_1, func_exp_2, func_exp_3, func_exp_4;$/;"	v
+func_unit	PNP_more.c	/^void func_unit(FLOAT *value) {$/;"	f
+g	PNP.h	/^GRID *g;$/;"	v
+get_Epsilon	PNP_more.c	/^void get_Epsilon(DOF **tmp, DOF **p) {$/;"	f
+get_Epsilon_all	PNP_more.c	/^void get_Epsilon_all(DOF **Full_Epsilon, DOF *Epsilon, DOF **p) {$/;"	f
+get_Epsilon_all_test	PNP_more.c	/^static void get_Epsilon_all_test(DOF **Full_Epsilon, DOF *Epsilon) {$/;"	f	file:
+get_Epsilon_r	PNP_more.c	/^void get_Epsilon_r(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f
+get_Epsilon_rgshen	PNP_more.c	/^void get_Epsilon_rgshen(DOF **tmp, DOF **p) {$/;"	f
+get_G_D_DOT_G_D	PNP_more.c	/^void get_G_D_DOT_G_D(DOF **tmp, DOF *dof) {$/;"	f
+get_G_u_DOT_G_v	PNP_more.c	/^void get_G_u_DOT_G_v(DOF **tmp, DOF *u, DOF *v) {$/;"	f
+get_Kappa	PNP_coefficient.c	/^static void get_Kappa(SIMPLEX *e, FLOAT *Epsilon, FLOAT *Kappa) {$/;"	f	file:
+get_Kappa1	PNP_coefficient.c	/^static void get_Kappa1(SIMPLEX *e, FLOAT *Kappa) {$/;"	f	file:
+get_eps_u_p	PNP_build_solver.c	/^static void get_eps_u_p(DOF **tmp, DOF *u, DOF **p) {$/;"	f	file:
+get_exp_u	PNP_more.c	/^static void get_exp_u(DOF **tmp, DOF *u, PNP_FUNC_1 func) {$/;"	f	file:
+get_size_c	PNP_build_solver.c	/^static void get_size_c(DOF **tmp, DOF **p) {$/;"	f	file:
+get_size_p	PNP_more.c	/^void get_size_p(DOF **tmp, DOF **p, PNP_FUNC_2 func) {$/;"	f
+get_size_u_p	PNP_build_solver.c	/^void get_size_u_p(DOF **tmp, DOF *u, DOF **p) {$/;"	f
+grad_G	PNP.h	/^DOF *G, *H, *grad_G, *grad_H;   \/\/initially calculated$/;"	v
+grad_H	PNP.h	/^DOF *G, *H, *grad_G, *grad_H;   \/\/initially calculated$/;"	v
+grow_Lambda	PNP_coefficient.c	/^FLOAT grow_Lambda = 1.0;$/;"	v
+indicator	PNP.h	/^DOF *indicator, *error, *td_tmp; \/\/for refinement use$/;"	v
+init_bulk	PNP_coefficient.c	/^FLOAT init_bulk[MNION] = {0.0}; \/\/ rgshen <--xujj$/;"	v
+initial_Alpha	PNP_coefficient.c	/^FLOAT initial_Alpha = 0.2;$/;"	v
+initial_bulk	PNP_coefficient.c	/^static void initial_bulk(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+initial_tol	PNP_coefficient.c	/^FLOAT initial_tol = 0;$/;"	v
+initialize_options	PNP_coefficient.c	/^static void initialize_options(INT mem_max) {$/;"	f	file:
+input_data	PNP_coefficient.c	/^INT input_data = 0;$/;"	v
+ion	PNP_coefficient.c	/^ions ion[MNION]={{+1, 0.04, 0.196, 0, FALSE}, {-1, 0.05, 0.203, 0, FALSE}, {+1, 0.01, 0.203, 0, TRUE}};$/;"	v
+ion_channel	PNP_coefficient.c	44;"	d	file:
+ions	PNP_coefficient.c	/^}ions;$/;"	t	typeref:struct:ions_	file:
+ions_	PNP_coefficient.c	/^typedef struct ions_{$/;"	s	file:
+kB	PNP_coefficient.c	/^FLOAT ec, Beta, Kappa_2, kB, kcal, Is, p_bulk;$/;"	v
+kcal	PNP_coefficient.c	/^FLOAT ec, Beta, Kappa_2, kB, kcal, Is, p_bulk;$/;"	v
+lambda_reg	PNP_more.c	/^void lambda_reg(DOF *v, SIMPLEX *ee, int bno, const FLOAT *lambda, FLOAT *value){$/;"	f
+linear_interpolation	PNP_more.c	/^static void linear_interpolation(COORD a, COORD b, COORD c, FLOAT value, int d) {$/;"	f	file:
+load_init	PNP.h	33;"	d
+loga_maxit	PNP_coefficient.c	/^INT loga_maxit = 20;$/;"	v
+loop_maxit	PNP_coefficient.c	/^INT loop_maxit = 500;$/;"	v
+lu_count	PNP.h	/^int lu_count = 0;       \/\/count step for converge-lubrication$/;"	v
+lub_ratio	PNP_coefficient.c	/^FLOAT lub_ratio = 1.0;$/;"	v
+lub_u	PNP.h	/^DOF *lub_u;$/;"	v
+lubrication	PNP_coefficient.c	/^INT lubrication = 0;        \/\/when lubrication > 0$/;"	v
+main	PNP_main.c	/^int main(int argc, char **argv){$/;"	f
+mark_region	PNP_more.c	/^static void mark_region(GRID *g, int region, int level) {$/;"	f	file:
+mem_pri_int	PNP_coefficient.c	/^INT mem_pri_int = 0;$/;"	v
+membrane_region	PNP_coefficient.c	/^INT membrane_region = 110;$/;"	v
+mesh_bottom	PNP_coefficient.c	/^FLOAT mesh_bottom = 100.0; 	$/;"	v
+mesh_init	PNP.h	35;"	d
+mesh_top	PNP_coefficient.c	/^FLOAT mesh_top = 100.0; 	$/;"	v
+mesh_unit	PNP_coefficient.c	/^FLOAT mesh_unit = 1.0;\/* default 1 A *\/$/;"	v
+mn_count	PNP.h	/^int mn_count = 0;       \/\/count step for monolithic steady-state$/;"	v
+model_type	PNP_coefficient.c	/^INT model_type = biomolecular;$/;"	v
+mono_maxit	PNP_coefficient.c	/^INT mono_maxit = 20;$/;"	v
+mono_pri_int	PNP_coefficient.c	/^INT mono_pri_int = 0;       \/\/interval of VTK print in monolithic method$/;"	v
+myquad	PNP_NEWTON.h	/^static void myquad(QUAD *quad, SIMPLEX *e, DOF *tcn, FLOAT *DATA1, FLOAT **DATAc, FLOAT h, int i, int j, FLOAT *value){$/;"	f
+nanotube	PNP_coefficient.c	45;"	d	file:
+net_charge	PNP_coefficient.c	/^FLOAT net_charge = 0;$/;"	v
+ni_count	PNP.h	/^int ni_count = 0;       \/\/count step for Newton's iteration$/;"	v
+nonlinear_Epsilon	PNP_coefficient.c	/^INT nonlinear_Epsilon = 0;$/;"	v
+nonlinear_maxit	PNP_coefficient.c	/^INT nonlinear_maxit = 50;$/;"	v
+off_vtk	PNP_coefficient.c	/^INT off_vtk = 0;\/* set 1, if don't want vtk output with in steady-state method *\/$/;"	v
+out_current_file	PNP_coefficient.c	/^char *out_current_file = NULL;$/;"	v
+out_dof_circle_file	PNP_coefficient.c	/^char *out_dof_circle_file = NULL;$/;"	v
+out_dof_section_file	PNP_coefficient.c	/^char *out_dof_section_file = NULL;$/;"	v
+p_H1	PNP.h	/^FLOAT u_H1, p_H1, P_H1, T_H1;$/;"	v
+p_L2	PNP.h	/^FLOAT u_L2, p_L2, P_L2, T_L2;$/;"	v
+p_N_bdry	PNP_analytic.c	/^BTYPE p_N_bdry = 0;$/;"	v
+p_N_bdry	PNP_analytic涂斌.c	/^BTYPE p_N_bdry = 0;$/;"	v
+p_Transform	PNP_more.c	/^static void p_Transform(FLOAT Alpha, DOF *p, DOF *P, DOF *u, DOF *size_p) {$/;"	f	file:
+p_bulk	PNP_coefficient.c	/^FLOAT ec, Beta, Kappa_2, kB, kcal, Is, p_bulk;$/;"	v
+pc_p	PNP.h	/^SOLVER *pc_u, *pc_p;$/;"	v
+pc_solver	PNP.h	/^SOLVER *pc_solver;$/;"	v
+pc_u	PNP.h	/^SOLVER *pc_u, *pc_p;$/;"	v
+ph	PNP.h	/^DOF *ph;            \/\/electrostatic potential (not dimensionless)$/;"	v
+potential_energy_calculation	PNP_coefficient.c	/^INT potential_energy_calculation = 0;$/;"	v
+pqr_grow	PNP_coefficient.c	/^FLOAT pqr_grow = 0;$/;"	v
+pqr_grow_n	PNP_coefficient.c	/^INT pqr_grow_n = 1;$/;"	v
+pr_count	PNP.h	/^int pr_count = 0;       \/\/count VTK printing$/;"	v
+prim_maxit	PNP_coefficient.c	/^INT prim_maxit = 500;$/;"	v
+prior_refine	PNP_coefficient.c	/^INT adaptive_level = 1, adaptive_refine = -1, prior_refine = 0;$/;"	v
+quad_left	PNP_NEWTON.h	/^static void quad_left(QUAD *quad, SIMPLEX *e, DOF *u, FLOAT *DATA1, FLOAT **DATAtc, FLOAT **DATAc, FLOAT h, int i, int j, FLOAT *value){$/;"	f
+quad_right	PNP_NEWTON.h	/^static void quad_right(QUAD *quad, SIMPLEX *e, DOF *u, FLOAT *DATA1, FLOAT **DATAtc, FLOAT **DATAc, FLOAT h, int i, FLOAT *value){$/;"	f
+r	PNP_coefficient.c	/^	FLOAT r;$/;"	m	struct:atoms_	file:
+r2	PNP_coefficient.c	84;"	d	file:
+re_count	PNP.h	/^int re_count = 0;       \/\/count refine time$/;"	v
+reac_bdry	PNP_coefficient.c	/^BTYPE reac_bdry = 0;\/\/reactive boundary$/;"	v
+reac_bulk_ratio	PNP_coefficient.c	/^FLOAT reac_bulk_ratio = 0.0;    \/\/density ratio of product to substrate$/;"	v
+reac_pri_int	PNP_coefficient.c	/^INT reac_pri_int = -1;      \/\/interval of reaction rate$/;"	v
+reactive	PNP_coefficient.c	/^	BOOLEAN reactive;$/;"	m	struct:ions_	file:
+read_parameter	PNP_coefficient.c	/^INT read_parameter = 0;$/;"	v
+read_tmp	PNP_coefficient.c	/^char read_tmp[5][30];$/;"	v
+refine_region	PNP_coefficient.c	/^INT region_level = -1, refine_region = 1;$/;"	v
+refine_time	PNP_coefficient.c	/^INT refine_time = 0;$/;"	v
+region_calculation	PNP_coefficient.c	/^INT region_calculation = 0;$/;"	v
+region_indicator	PNP.h	/^DOF *region_indicator;      \/\/1 in region, 0 out of region$/;"	v
+region_level	PNP_coefficient.c	/^INT region_level = -1, refine_region = 1;$/;"	v
+region_measure	PNP_more.c	/^static void region_measure(int region, GRID *g, INT *n, FLOAT *V) {$/;"	f	file:
+rp_tab	PNP_coefficient.c	/^INT rp_tab = 1;         \/\/for reaction product TD calculation$/;"	v
+rr_Alpha	PNP_coefficient.c	/^FLOAT rr_Alpha = 0.0;       \/\/reactive rate Alpha$/;"	v
+rr_bdry	PNP_coefficient.c	/^INT rr_bdry = 0;        \/\/enable Robin reactive boundary$/;"	v
+s_0	PNP_coefficient.c	/^FLOAT s_0 = 10.0;$/;"	v
+scatter_p	PNP.h	/^DOF *scatter_p;         \/\/consider fixed charge scattered as ions$/;"	v
+scd	PNP_coefficient.c	/^FLOAT scd = -0.025; \/\/surface charge density$/;"	v
+scd_bdry	PNP_coefficient.c	/^BTYPE scd_bdry = 0;\/\/surface_charge boundary$/;"	v
+scd_bottom	PNP_coefficient.c	/^FLOAT scd_bottom = -25;$/;"	v
+scd_top	PNP_coefficient.c	/^FLOAT scd_top = 25;$/;"	v
+section_value	PNP_coefficient.c	/^FLOAT section_value = 0.00;$/;"	v
+sfcg_bdry	PNP_coefficient.c	/^BTYPE sfcg_bdry = 0; \/\/surface charge boundary--rgshen <--xujj$/;"	v
+simple_reaction	PNP_coefficient.c	/^INT simple_reaction = 0;    \/\/calculate on rr_bdry without gradient$/;"	v
+slot_maxit	PNP_coefficient.c	/^INT slot_maxit = 50;$/;"	v
+smpnp_myquad	PNP_build_solver.c	/^static void smpnp_myquad(QUAD *quad, SIMPLEX *e, int i, int j, DOF *p, FLOAT *DATA2, FLOAT **DATAc, FLOAT **DATAGc, FLOAT h, FLOAT *value){	$/;"	f	file:
+solute_region	PNP_coefficient.c	/^INT solute_region = 120;$/;"	v
+solve_u_D	PNP_coefficient.c	/^INT solve_u_D = 0;$/;"	v
+solvent_region	PNP_coefficient.c	/^INT solvent_region = 100;$/;"	v
+solver	PNP.h	/^SOLVER *solver;$/;"	v
+ss_count	PNP.h	/^int ss_count = 0;       \/\/count iteration step for steady-state$/;"	v
+ss_step_vtk	PNP_coefficient.c	/^INT ss_step_vtk = 0;        \/\/print VTK every steady-state step$/;"	v
+stst_init	PNP.h	32;"	d
+surface_charge	PNP_coefficient.c	/^INT surface_charge = 0;$/;"	v
+t_Transform	PNP_more.c	/^static void t_Transform(FLOAT Alpha, DOF *p, DOF *T) {$/;"	f	file:
+t_d_init_type	PNP.h	/^INT t_d_init_type = func_init;$/;"	v
+t_d_off_vtk	PNP_coefficient.c	/^INT t_d_off_vtk = 1;        \/\/turn off time-dependent(TD) VTK print$/;"	v
+t_d_pri_int	PNP_coefficient.c	/^INT t_d_pri_int = 100;      \/\/interval of VTK print in TD method$/;"	v
+td_count	PNP.h	/^int td_count = 0;       \/\/count time step for time-dependent$/;"	v
+td_dof_name	PNP_coefficient.c	/^char *td_dof_name;$/;"	v
+td_initial_bulk	PNP_coefficient.c	/^static void td_initial_bulk(FLOAT x, FLOAT y, FLOAT z, FLOAT *value) {$/;"	f	file:
+td_tmp	PNP.h	/^DOF *indicator, *error, *td_tmp; \/\/for refinement use$/;"	v
+test_current	PNP_coefficient.c	/^INT test_current = 0;   \/\/test the order$/;"	v
+tetrahetron_area	PNP_more.c	/^static void tetrahetron_area(FLOAT *X, FLOAT *Y, FLOAT *area) {$/;"	f	file:
+time_maxit	PNP_coefficient.c	/^INT time_maxit = 1000;$/;"	v
+tl_count	PNP.h	/^int tl_count = 0;       \/\/count step in every time level$/;"	v
+tmp_c	PNP.h	/^DOF *c[MNION1],  *tmp_c[MNION1],  *TMP_c[MNION1],  *delta_c[MNION1];$/;"	v
+tmp_file	PNP_coefficient.c	/^char *tmp_file = NULL;$/;"	v
+tmp_path	PNP_coefficient.c	/^char *tmp_path;$/;"	v
+tmp_scd	PNP_coefficient.c	/^FLOAT tmp_scd = 0; \/\/store scd$/;"	v
+tmp_type	PNP_coefficient.c	/^int tmp_type;           \/\/for temporary use$/;"	v
+tmp_u	PNP.h	/^DOF *u,     *tmp_u,     *TMP_u,     *delta_u;$/;"	v
+tol	PNP_coefficient.c	/^FLOAT tol = 1.0e-6;$/;"	v
+triangle_area	PNP_more.c	/^static void triangle_area(FLOAT *X, FLOAT *Y, FLOAT *area) {$/;"	f	file:
+tsc	PNP_coefficient.c	/^FLOAT *tsc;         \/* rgshen -original transformed results of c*\/$/;"	v
+u	PNP.h	/^DOF *u,     *tmp_u,     *TMP_u,     *delta_u;$/;"	v
+u_H1	PNP.h	/^FLOAT u_H1, p_H1, P_H1, T_H1;$/;"	v
+u_L2	PNP.h	/^FLOAT u_L2, p_L2, P_L2, T_L2;$/;"	v
+u_N_bdry	PNP_analytic.c	/^BTYPE u_N_bdry = 0;$/;"	v
+u_N_bdry	PNP_analytic涂斌.c	/^BTYPE u_N_bdry = 0;$/;"	v
+u_bdry	PNP_coefficient.c	/^BTYPE u_bdry = 0;\/\/only u boundary$/;"	v
+u_bulk	PNP_coefficient.c	/^FLOAT u_bulk = 0.00;$/;"	v
+u_bulk1	PNP_coefficient.c	/^FLOAT u_bulk1 = 0.00;$/;"	v
+u_init	PNP_coefficient.c	/^INT u_init = 1;$/;"	v
+voltage_test	PNP_coefficient.c	/^INT voltage_test = 0;$/;"	v
+which_bc	PNP_coefficient.c	/^int which_bc;$/;"	v
+which_ion	PNP_coefficient.c	/^int which_ion = 0;$/;"	v
+x	PNP_coefficient.c	/^	FLOAT x, y, z;$/;"	m	struct:atoms_	file:
+x_axis	PNP_coefficient.c	49;"	d	file:
+y	PNP_coefficient.c	/^	FLOAT x, y, z;$/;"	m	struct:atoms_	file:
+y_axis	PNP_coefficient.c	50;"	d	file:
+z	PNP_coefficient.c	/^	FLOAT x, y, z;$/;"	m	struct:atoms_	file:
+z_axis	PNP_coefficient.c	51;"	d	file:

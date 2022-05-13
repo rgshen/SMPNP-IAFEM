@@ -1,0 +1,151 @@
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* ichannel solver is used to simulate the biomolecular system by solving the  */ 
+/* 3D Poisson-Nernst-Planck (PNP) equations. The 3D PNP equations are solved   */
+/* using the finite element method (FEM), which is advantageous for modeling   */
+/* irregular geometries with complex boundary conditions. Our finite element   */
+/* algorithms are based on tetrahedral meshes. The algorithms are implemented  */
+/* with 3D parallel adaptive finite element package PHG. We adopt a decoupled  */
+/* iteration method to solve the coupled Poisson equation and Nernst-Planck    */
+/* (NP) equations. The under-relaxation scheme and coefficient gradient method */
+/* are employed to guarantee the convergence of the algorithms. The detailed   */
+/* PNP  model and algorithm can be seen in the Refs [1] and [2].	       */
+/* [1] B. Tu, M. X. Chen, Y. Xie, et al., J. Comput. Chem., 34: 2065 (2013)    */
+/* [2] X. J. Liu, B. Z. Lu, Phys. Rev. E., 96: 062416 (2017)		       */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*									       */
+/* The usage of the ichannel solver can be seen in the following part. 	       */
+/*									       */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* Poisson equation:                                                           */
+/* in Omega(solute_region & solvent_region)                                    */
+/* -div_Epsilon( grad_ph ) * Epsilon_vaccum = Lambda * Sigma( qi * ci )        */
+/*                                          + Sigma(qfj * Delta(x - xj))       */
+/* Nernst-Planck equation:               				       */
+/* in Omega_s(solvent_region)                                                  */
+/* dci/dt = div_Ji      (Ji is flux defined below, which is current)           */
+/*     Ji = Di * (grad_ci + beta * qi * ci * grad_ph)   	               */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* 									       */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Boundary condition:  (there would be more bdrys in special case)            */
+/*           ph = 0                     on patial_Omega                        */
+/*           ci = ci_bulk               on patial_Omega                        */
+/*      (n, Ji) = 0                     on bmlc_bdry                           */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* In order to improve the scalability, the solver should prepare for          */
+/* calculating any number of ions with any kind of mesh, so information        */
+/* about the ions and mesh should input before program in *.ions, *.mesh,      */
+/* *.pqr and *.bc_dirichlet. Users can change these files in example*.sh file. */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* In example*.sh file 							       */
+/* c_bulk=0.05 \					       		       */
+/* mpirun -np 16 ichannel $c_bulk $c_bulk \ 				       */
+/* -fn_mesh 1bl8.mesh -fn_pqr 1bl8.pqr \				       */
+/* -fn_ions 2ions_HR.ions -fn_bcmap channel_old.bc_dirichlet \ 		       */
+/* -dof_type P1 -tol 1.0e-6 -u_bulk -0.10 \                                    */ 
+/* -Alpha 0.2  -PNP_grow 8 -pqr_grow 8 \				       */
+/* -options_file advanced1.options \					       */
+/* -current_calculation 2 -section_value 0.0 \                                 */
+/* -dof_section_value_calculation 1 \ 					       */
+/* -out_dof_section_file dof_section_value_ga_con005_minus010V.out             */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+ The parameters are explained as follows:
+
+|-------------------------------------------------------------------------------|
+|-np					the numbers of processes		| 
+|-------------------------------------------------------------------------------|
+|-fn_mesh				Read the mesh file 			|
+|	(char *)								|
+|	"1bl8.mesh"	(default)						|
+|-------------------------------------------------------------------------------|
+|-fn_pqr				Read the pqr file			|
+|	(char *)								|
+|	"1bl8.pqr"	(default)						|
+|-------------------------------------------------------------------------------|
+|-fn_ions				Read the ion information file		|
+|	(char *)								|
+|	"2ions_HR.ions"	(default)						|
+|-------------------------------------------------------------------------------|
+|-fn_bcmap				Read the boundary condition map file	|
+|	(char *)								|
+|	"channel_old.bc"(default)						|
+|-------------------------------------------------------------------------------|
+|-dof_type				type of DOF (degree of freedom)		|
+|	Pn	n = 1,2,3		n-order Lagrange element		|
+|-------------------------------------------------------------------------------|
+|-tol					tolerance for iteration			|
+|	(float)									|
+|	1.0e-6	(default)							|
+|-------------------------------------------------------------------------------|
+|-u_bulk				To control the value of applied voltage	|
+|	(float)									|
+|	-0.10				voltage is set to -0.1 V on boundary	|
+|-------------------------------------------------------------------------------|
+|-Alpha					The under-relaxation coefficient	|
+|	(float)									|
+|	0.95	(default)							|
+|	[0, 1]				The smaller the more stable, but the	|
+|					more time-consuming			|
+|-------------------------------------------------------------------------------|
+|-PNP_grow				To control whether to use the varing	|
+|					coefficient for surface charge, bulk	|
+|					concentration and bulk voltage		|
+|	(int)									|
+|	0	(default)		No					|
+|	n > 0		 		Yes, n-step varying coefficient method	|
+|					is used					|
+|-------------------------------------------------------------------------------|
+|-pqr_grow				To control whether to use varing	|
+|					coefficient for fixed charge		|
+|	(int)									|
+|	0	(default)		No					|
+|	n > 0		 		Yes, n-step varying coefficient method 	|
+|					is used					|
+|-------------------------------------------------------------------------------|
+|-options_file  			To read the options file and adjust 	|
+|					parameters in program, often including	|
+|					solver options. User should give the	|
+|				        path of the file.			|
+|	(char *)									|
+|	"advanced.options"		Reading advanced.options to provide	|
+|					parameters				|
+|-------------------------------------------------------------------------------|
+|-current_calculation			To control whether to calculate ion 	|
+|					current					|
+|	(int)									|
+|	0	(default)		No					|
+|	1				Yes, calculated at several sections	|
+|	2				Yes, calculated at z = section_value	|
+|-------------------------------------------------------------------------------|
+|-section_value				Choose the section to calculate current	|
+|	(float)									|
+|	0.0	(default)		position at z = 0.0			| 
+|-------------------------------------------------------------------------------|
+|-dof_section_value_calculation 	To control whether to calculate average	|
+|					values at several cut sections		|
+|	(int)									|
+|	0	(default)		No					|
+|	1	       			Yes					|
+|-------------------------------------------------------------------------------|
+|-out_dof_section_file			To control whether to output the above	|
+|					results in *.out file, and to give the	|
+|					name of *.out				|
+|	(char *)								|
+|	NULL	(default)		No					|
+|	"name"		 		Yes, output to name.out			|
+|-------------------------------------------------------------------------------|
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* An explanation of the read files:					       */
+/* If it is not in current folder, we should give the full path of the files   */
+/* When the solver finished, the VTK file will be outputed in current folder.  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*									       */
+/* sh example1.sh is used to simulate the gA channel			       */
+/* sh example2.sh is used to simulate the KcsA channel                         */
+/*									       */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
